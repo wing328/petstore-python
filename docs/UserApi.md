@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **create_user**
-> create_user($body)
+> create_user(body=body)
 
 Create user
 
@@ -30,9 +30,10 @@ import time
 
 
 api_instance = swagger_client.UserApi
-body = new User() # User | Created user object (optional)
+body = swagger_client.User() # User | Created user object (optional)
 
 try: 
+}    # Create user
     api_instance.create_user(body=body);
 except ApiException as e:
     print "Exception when calling UserApi->create_user: {e}\n";
@@ -60,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_users_with_array_input**
-> create_users_with_array_input($body)
+> create_users_with_array_input(body=body)
 
 Creates list of users with given input array
 
@@ -75,9 +76,10 @@ import time
 
 
 api_instance = swagger_client.UserApi
-body = array(new User()) # list[User] | List of user object (optional)
+body = [swagger_client.User()] # list[User] | List of user object (optional)
 
 try: 
+}    # Creates list of users with given input array
     api_instance.create_users_with_array_input(body=body);
 except ApiException as e:
     print "Exception when calling UserApi->create_users_with_array_input: {e}\n";
@@ -105,7 +107,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_users_with_list_input**
-> create_users_with_list_input($body)
+> create_users_with_list_input(body=body)
 
 Creates list of users with given input array
 
@@ -120,9 +122,10 @@ import time
 
 
 api_instance = swagger_client.UserApi
-body = array(new User()) # list[User] | List of user object (optional)
+body = [swagger_client.User()] # list[User] | List of user object (optional)
 
 try: 
+}    # Creates list of users with given input array
     api_instance.create_users_with_list_input(body=body);
 except ApiException as e:
     print "Exception when calling UserApi->create_users_with_list_input: {e}\n";
@@ -150,7 +153,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_user**
-> delete_user($username)
+> delete_user(username)
 
 Delete user
 
@@ -164,14 +167,15 @@ from pprint import pprint
 import time
 
 
-// Configure HTTP basic authorization: test_http_basic
+# Configure HTTP basic authorization: test_http_basic
 swagger_client.configuration.username = 'YOUR_USERNAME'
 swagger_client.configuration.password = 'YOUR_PASSWORD'
 
 api_instance = swagger_client.UserApi
-username = username_example # str | The name that needs to be deleted
+username = "username_example" # str | The name that needs to be deleted
 
 try: 
+}    # Delete user
     api_instance.delete_user(username);
 except ApiException as e:
     print "Exception when calling UserApi->delete_user: {e}\n";
@@ -199,7 +203,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_user_by_name**
-> User get_user_by_name($username)
+> User get_user_by_name(username)
 
 Get user by user name
 
@@ -214,9 +218,10 @@ import time
 
 
 api_instance = swagger_client.UserApi
-username = username_example # str | The name that needs to be fetched. Use user1 for testing.
+username = "username_example" # str | The name that needs to be fetched. Use user1 for testing.
 
 try: 
+}    # Get user by user name
     api_response = api_instance.get_user_by_name(username);
     pprint(api_response)
 except ApiException as e:
@@ -245,7 +250,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **login_user**
-> str login_user($username, $password)
+> str login_user(username=username, password=password)
 
 Logs user into the system
 
@@ -260,10 +265,11 @@ import time
 
 
 api_instance = swagger_client.UserApi
-username = username_example # str | The user name for login (optional)
-password = password_example # str | The password for login in clear text (optional)
+username = "username_example" # str | The user name for login (optional)
+password = "password_example" # str | The password for login in clear text (optional)
 
 try: 
+}    # Logs user into the system
     api_response = api_instance.login_user(username=username, password=password);
     pprint(api_response)
 except ApiException as e:
@@ -310,6 +316,7 @@ import time
 api_instance = swagger_client.UserApi
 
 try: 
+}    # Logs out current logged in user session
     api_instance.logout_user();
 except ApiException as e:
     print "Exception when calling UserApi->logout_user: {e}\n";
@@ -334,7 +341,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_user**
-> update_user($username, $body)
+> update_user(username, body=body)
 
 Updated user
 
@@ -349,10 +356,11 @@ import time
 
 
 api_instance = swagger_client.UserApi
-username = username_example # str | name that need to be deleted
-body = new User() # User | Updated user object (optional)
+username = "username_example" # str | name that need to be deleted
+body = swagger_client.User() # User | Updated user object (optional)
 
 try: 
+}    # Updated user
     api_instance.update_user(username, body=body);
 except ApiException as e:
     print "Exception when calling UserApi->update_user: {e}\n";

@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **delete_order**
-> delete_order($order_id)
+> delete_order(order_id)
 
 Delete purchase order by ID
 
@@ -28,9 +28,10 @@ import time
 
 
 api_instance = swagger_client.StoreApi
-order_id = order_id_example # str | ID of the order that needs to be deleted
+order_id = "order_id_example" # str | ID of the order that needs to be deleted
 
 try: 
+}    # Delete purchase order by ID
     api_instance.delete_order(order_id);
 except ApiException as e:
     print "Exception when calling StoreApi->delete_order: {e}\n";
@@ -58,7 +59,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **find_orders_by_status**
-> list[Order] find_orders_by_status($status)
+> list[Order] find_orders_by_status(status=status)
 
 Finds orders by status
 
@@ -72,19 +73,20 @@ from pprint import pprint
 import time
 
 
-// Configure API key authorization: test_api_client_id
+# Configure API key authorization: test_api_client_id
 swagger_client.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY';
-// Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-// swagger_client.configuration.api_key_prefix['x-test_api_client_id'] = 'BEARER'
-// Configure API key authorization: test_api_client_secret
+# Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
+# swagger_client.configuration.api_key_prefix['x-test_api_client_id'] = 'BEARER'
+# Configure API key authorization: test_api_client_secret
 swagger_client.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY';
-// Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-// swagger_client.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
+# Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
+# swagger_client.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
 
 api_instance = swagger_client.StoreApi
-status = placed # str | Status value that needs to be considered for query (optional) (default to placed)
+status = "placed" # str | Status value that needs to be considered for query (optional) (default to placed)
 
 try: 
+}    # Finds orders by status
     api_response = api_instance.find_orders_by_status(status=status);
     pprint(api_response)
 except ApiException as e:
@@ -127,14 +129,15 @@ from pprint import pprint
 import time
 
 
-// Configure API key authorization: api_key
+# Configure API key authorization: api_key
 swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
-// Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-// swagger_client.configuration.api_key_prefix['api_key'] = 'BEARER'
+# Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
+# swagger_client.configuration.api_key_prefix['api_key'] = 'BEARER'
 
 api_instance = swagger_client.StoreApi
 
 try: 
+}    # Returns pet inventories by status
     api_response = api_instance.get_inventory();
     pprint(api_response)
 except ApiException as e:
@@ -174,14 +177,15 @@ from pprint import pprint
 import time
 
 
-// Configure API key authorization: api_key
+# Configure API key authorization: api_key
 swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
-// Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-// swagger_client.configuration.api_key_prefix['api_key'] = 'BEARER'
+# Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
+# swagger_client.configuration.api_key_prefix['api_key'] = 'BEARER'
 
 api_instance = swagger_client.StoreApi
 
 try: 
+}    # Fake endpoint to test arbitrary object return by 'Get inventory'
     api_response = api_instance.get_inventory_in_object();
     pprint(api_response)
 except ApiException as e:
@@ -193,7 +197,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**object**](object.md)
+**object**
 
 ### Authorization
 
@@ -207,7 +211,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_order_by_id**
-> Order get_order_by_id($order_id)
+> Order get_order_by_id(order_id)
 
 Find purchase order by ID
 
@@ -221,19 +225,20 @@ from pprint import pprint
 import time
 
 
-// Configure API key authorization: test_api_key_header
+# Configure API key authorization: test_api_key_header
 swagger_client.configuration.api_key['test_api_key_header'] = 'YOUR_API_KEY';
-// Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-// swagger_client.configuration.api_key_prefix['test_api_key_header'] = 'BEARER'
-// Configure API key authorization: test_api_key_query
+# Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
+# swagger_client.configuration.api_key_prefix['test_api_key_header'] = 'BEARER'
+# Configure API key authorization: test_api_key_query
 swagger_client.configuration.api_key['test_api_key_query'] = 'YOUR_API_KEY';
-// Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-// swagger_client.configuration.api_key_prefix['test_api_key_query'] = 'BEARER'
+# Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
+# swagger_client.configuration.api_key_prefix['test_api_key_query'] = 'BEARER'
 
 api_instance = swagger_client.StoreApi
-order_id = order_id_example # str | ID of pet that needs to be fetched
+order_id = "order_id_example" # str | ID of pet that needs to be fetched
 
 try: 
+}    # Find purchase order by ID
     api_response = api_instance.get_order_by_id(order_id);
     pprint(api_response)
 except ApiException as e:
@@ -262,7 +267,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **place_order**
-> Order place_order($body)
+> Order place_order(body=body)
 
 Place an order for a pet
 
@@ -276,19 +281,20 @@ from pprint import pprint
 import time
 
 
-// Configure API key authorization: test_api_client_id
+# Configure API key authorization: test_api_client_id
 swagger_client.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY';
-// Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-// swagger_client.configuration.api_key_prefix['x-test_api_client_id'] = 'BEARER'
-// Configure API key authorization: test_api_client_secret
+# Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
+# swagger_client.configuration.api_key_prefix['x-test_api_client_id'] = 'BEARER'
+# Configure API key authorization: test_api_client_secret
 swagger_client.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY';
-// Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-// swagger_client.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
+# Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
+# swagger_client.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
 
 api_instance = swagger_client.StoreApi
-body = new Order() # Order | order placed for purchasing the pet (optional)
+body = swagger_client.Order() # Order | order placed for purchasing the pet (optional)
 
 try: 
+}    # Place an order for a pet
     api_response = api_instance.place_order(body=body);
     pprint(api_response)
 except ApiException as e:
