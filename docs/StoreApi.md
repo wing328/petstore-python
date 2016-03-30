@@ -29,12 +29,13 @@ import time
 
 # create an instance of the API class
 api_instance = swagger_client.StoreApi()
-order_id = "order_id_example" # str | ID of the order that needs to be deleted
+order_id = 'order_id_example' # str | ID of the order that needs to be deleted
+
 try: 
     # Delete purchase order by ID
-    api_instance.delete_order(order_id);
+    api_instance.delete_order(order_id)
 except ApiException as e:
-    print "Exception when calling StoreApi->delete_order: {e}\n";
+    print "Exception when calling StoreApi->delete_order: %s\n" % e
 ```
 
 ### Parameters
@@ -74,23 +75,24 @@ import time
 
 
 # Configure API key authorization: test_api_client_id
-swagger_client.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY';
+swagger_client.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['x-test_api_client_id'] = 'BEARER'
 # Configure API key authorization: test_api_client_secret
-swagger_client.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY';
+swagger_client.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
 
 # create an instance of the API class
 api_instance = swagger_client.StoreApi()
-status = "placed" # str | Status value that needs to be considered for query (optional) (default to placed)
+status = 'placed' # str | Status value that needs to be considered for query (optional) (default to placed)
+
 try: 
     # Finds orders by status
-    api_response = api_instance.find_orders_by_status(status=status);
+    api_response = api_instance.find_orders_by_status(status=status)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling StoreApi->find_orders_by_status: {e}\n";
+    print "Exception when calling StoreApi->find_orders_by_status: %s\n" % e
 ```
 
 ### Parameters
@@ -130,18 +132,19 @@ import time
 
 
 # Configure API key authorization: api_key
-swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
+swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['api_key'] = 'BEARER'
 
 # create an instance of the API class
 api_instance = swagger_client.StoreApi()
+
 try: 
     # Returns pet inventories by status
-    api_response = api_instance.get_inventory();
+    api_response = api_instance.get_inventory()
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling StoreApi->get_inventory: {e}\n";
+    print "Exception when calling StoreApi->get_inventory: %s\n" % e
 ```
 
 ### Parameters
@@ -178,18 +181,19 @@ import time
 
 
 # Configure API key authorization: api_key
-swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
+swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['api_key'] = 'BEARER'
 
 # create an instance of the API class
 api_instance = swagger_client.StoreApi()
+
 try: 
     # Fake endpoint to test arbitrary object return by 'Get inventory'
-    api_response = api_instance.get_inventory_in_object();
+    api_response = api_instance.get_inventory_in_object()
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling StoreApi->get_inventory_in_object: {e}\n";
+    print "Exception when calling StoreApi->get_inventory_in_object: %s\n" % e
 ```
 
 ### Parameters
@@ -226,23 +230,24 @@ import time
 
 
 # Configure API key authorization: test_api_key_header
-swagger_client.configuration.api_key['test_api_key_header'] = 'YOUR_API_KEY';
+swagger_client.configuration.api_key['test_api_key_header'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['test_api_key_header'] = 'BEARER'
 # Configure API key authorization: test_api_key_query
-swagger_client.configuration.api_key['test_api_key_query'] = 'YOUR_API_KEY';
+swagger_client.configuration.api_key['test_api_key_query'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['test_api_key_query'] = 'BEARER'
 
 # create an instance of the API class
 api_instance = swagger_client.StoreApi()
-order_id = "order_id_example" # str | ID of pet that needs to be fetched
+order_id = 'order_id_example' # str | ID of pet that needs to be fetched
+
 try: 
     # Find purchase order by ID
-    api_response = api_instance.get_order_by_id(order_id);
+    api_response = api_instance.get_order_by_id(order_id)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling StoreApi->get_order_by_id: {e}\n";
+    print "Exception when calling StoreApi->get_order_by_id: %s\n" % e
 ```
 
 ### Parameters
@@ -282,23 +287,24 @@ import time
 
 
 # Configure API key authorization: test_api_client_id
-swagger_client.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY';
+swagger_client.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['x-test_api_client_id'] = 'BEARER'
 # Configure API key authorization: test_api_client_secret
-swagger_client.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY';
+swagger_client.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
 
 # create an instance of the API class
 api_instance = swagger_client.StoreApi()
 body = swagger_client.Order() # Order | order placed for purchasing the pet (optional)
+
 try: 
     # Place an order for a pet
-    api_response = api_instance.place_order(body=body);
+    api_response = api_instance.place_order(body=body)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling StoreApi->place_order: {e}\n";
+    print "Exception when calling StoreApi->place_order: %s\n" % e
 ```
 
 ### Parameters
