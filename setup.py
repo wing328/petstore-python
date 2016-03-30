@@ -3,8 +3,8 @@
 import sys
 from setuptools import setup, find_packages
 
-NAME = "swagger_client"
-VERSION = "1.0.0"
+NAME = "Petstore"
+VERSION = "1.2.3"
 
 
 

@@ -1,4 +1,4 @@
-# swagger_client\PetApi
+# Petstore\PetApi
 
 All URIs are relative to *http://petstore.swagger.io/v2*
 
@@ -27,16 +27,16 @@ Add a new pet to the store
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: petstore_auth
-swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+Petstore.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PetApi()
-body = swagger_client.Pet() # Pet | Pet object that needs to be added to the store (optional)
+api_instance = Petstore.PetApi()
+body = Petstore.Pet() # Pet | Pet object that needs to be added to the store (optional)
 
 try: 
     # Add a new pet to the store
@@ -76,15 +76,15 @@ Fake endpoint to test byte array in body parameter for adding a new pet to the s
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: petstore_auth
-swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+Petstore.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PetApi()
+api_instance = Petstore.PetApi()
 body = 'B' # str | Pet object in the form of byte array (optional)
 
 try: 
@@ -125,15 +125,15 @@ Deletes a pet
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: petstore_auth
-swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+Petstore.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PetApi()
+api_instance = Petstore.PetApi()
 pet_id = 789 # int | Pet id to delete
 api_key = 'api_key_example' # str |  (optional)
 
@@ -176,15 +176,15 @@ Multiple status values can be provided with comma separated strings
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: petstore_auth
-swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+Petstore.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PetApi()
+api_instance = Petstore.PetApi()
 status = ['available'] # list[str] | Status values that need to be considered for query (optional) (default to available)
 
 try: 
@@ -226,15 +226,15 @@ Muliple tags can be provided with comma seperated strings. Use tag1, tag2, tag3 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: petstore_auth
-swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+Petstore.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PetApi()
+api_instance = Petstore.PetApi()
 tags = ['tags_example'] # list[str] | Tags to filter by (optional)
 
 try: 
@@ -276,19 +276,19 @@ Returns a pet when ID < 10.  ID > 10 or nonintegers will simulate API error cond
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: api_key
-swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY'
+Petstore.configuration.api_key['api_key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-# swagger_client.configuration.api_key_prefix['api_key'] = 'BEARER'
+# Petstore.configuration.api_key_prefix['api_key'] = 'BEARER'
 # Configure OAuth2 access token for authorization: petstore_auth
-swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+Petstore.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PetApi()
+api_instance = Petstore.PetApi()
 pet_id = 789 # int | ID of pet that needs to be fetched
 
 try: 
@@ -330,19 +330,19 @@ Returns a pet when ID < 10.  ID > 10 or nonintegers will simulate API error cond
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: api_key
-swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY'
+Petstore.configuration.api_key['api_key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-# swagger_client.configuration.api_key_prefix['api_key'] = 'BEARER'
+# Petstore.configuration.api_key_prefix['api_key'] = 'BEARER'
 # Configure OAuth2 access token for authorization: petstore_auth
-swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+Petstore.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PetApi()
+api_instance = Petstore.PetApi()
 pet_id = 789 # int | ID of pet that needs to be fetched
 
 try: 
@@ -384,19 +384,19 @@ Returns a pet when ID < 10.  ID > 10 or nonintegers will simulate API error cond
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: api_key
-swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY'
+Petstore.configuration.api_key['api_key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-# swagger_client.configuration.api_key_prefix['api_key'] = 'BEARER'
+# Petstore.configuration.api_key_prefix['api_key'] = 'BEARER'
 # Configure OAuth2 access token for authorization: petstore_auth
-swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+Petstore.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PetApi()
+api_instance = Petstore.PetApi()
 pet_id = 789 # int | ID of pet that needs to be fetched
 
 try: 
@@ -438,16 +438,16 @@ Update an existing pet
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: petstore_auth
-swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+Petstore.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PetApi()
-body = swagger_client.Pet() # Pet | Pet object that needs to be added to the store (optional)
+api_instance = Petstore.PetApi()
+body = Petstore.Pet() # Pet | Pet object that needs to be added to the store (optional)
 
 try: 
     # Update an existing pet
@@ -487,15 +487,15 @@ Updates a pet in the store with form data
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: petstore_auth
-swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+Petstore.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PetApi()
+api_instance = Petstore.PetApi()
 pet_id = 'pet_id_example' # str | ID of pet that needs to be updated
 name = 'name_example' # str | Updated name of the pet (optional)
 status = 'status_example' # str | Updated status of the pet (optional)
@@ -540,15 +540,15 @@ uploads an image
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: petstore_auth
-swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+Petstore.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.PetApi()
+api_instance = Petstore.PetApi()
 pet_id = 789 # int | ID of pet to update
 additional_metadata = 'additional_metadata_example' # str | Additional data to pass to server (optional)
 file = '/path/to/file.txt' # file | file to upload (optional)

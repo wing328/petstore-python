@@ -1,4 +1,4 @@
-# swagger_client\UserApi
+# Petstore\UserApi
 
 All URIs are relative to *http://petstore.swagger.io/v2*
 
@@ -24,13 +24,13 @@ This can only be done by the logged in user.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi()
-body = swagger_client.User() # User | Created user object (optional)
+api_instance = Petstore.UserApi()
+body = Petstore.User() # User | Created user object (optional)
 
 try: 
     # Create user
@@ -70,13 +70,13 @@ Creates list of users with given input array
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi()
-body = [swagger_client.User()] # list[User] | List of user object (optional)
+api_instance = Petstore.UserApi()
+body = [Petstore.User()] # list[User] | List of user object (optional)
 
 try: 
     # Creates list of users with given input array
@@ -116,13 +116,13 @@ Creates list of users with given input array
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi()
-body = [swagger_client.User()] # list[User] | List of user object (optional)
+api_instance = Petstore.UserApi()
+body = [Petstore.User()] # list[User] | List of user object (optional)
 
 try: 
     # Creates list of users with given input array
@@ -162,16 +162,16 @@ This can only be done by the logged in user.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: test_http_basic
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+Petstore.configuration.username = 'YOUR_USERNAME'
+Petstore.configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi()
+api_instance = Petstore.UserApi()
 username = 'username_example' # str | The name that needs to be deleted
 
 try: 
@@ -212,12 +212,12 @@ Get user by user name
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi()
+api_instance = Petstore.UserApi()
 username = 'username_example' # str | The name that needs to be fetched. Use user1 for testing.
 
 try: 
@@ -259,12 +259,12 @@ Logs user into the system
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi()
+api_instance = Petstore.UserApi()
 username = 'username_example' # str | The user name for login (optional)
 password = 'password_example' # str | The password for login in clear text (optional)
 
@@ -308,12 +308,12 @@ Logs out current logged in user session
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi()
+api_instance = Petstore.UserApi()
 
 try: 
     # Logs out current logged in user session
@@ -350,14 +350,14 @@ This can only be done by the logged in user.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import Petstore
+from Petstore.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UserApi()
+api_instance = Petstore.UserApi()
 username = 'username_example' # str | name that need to be deleted
-body = swagger_client.User() # User | Updated user object (optional)
+body = Petstore.User() # User | Updated user object (optional)
 
 try: 
     # Updated user
