@@ -26,7 +26,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 api_instance = swagger_client.StoreApi
 order_id = order_id_example # str | ID of the order that needs to be deleted
@@ -35,8 +34,6 @@ try:
     api_instance.delete_order(order_id);
 except ApiException as e:
     print "Exception when calling StoreApi->delete_order: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -74,7 +71,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: test_api_client_id
 swagger_client.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY';
@@ -93,8 +89,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling StoreApi->find_orders_by_status: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -132,7 +126,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
@@ -146,8 +139,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling StoreApi->get_inventory: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -182,7 +173,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
@@ -196,8 +186,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling StoreApi->get_inventory_in_object: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -232,7 +220,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: test_api_key_header
 swagger_client.configuration.api_key['test_api_key_header'] = 'YOUR_API_KEY';
@@ -251,8 +238,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling StoreApi->get_order_by_id: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -290,7 +275,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: test_api_client_id
 swagger_client.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY';
@@ -309,8 +293,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling StoreApi->place_order: {e}\n";
-}
-?>
 ```
 
 ### Parameters

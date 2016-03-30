@@ -28,7 +28,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 api_instance = swagger_client.UserApi
 body = new User() # User | Created user object (optional)
@@ -37,8 +36,6 @@ try:
     api_instance.create_user(body=body);
 except ApiException as e:
     print "Exception when calling UserApi->create_user: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -76,7 +73,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 api_instance = swagger_client.UserApi
 body = array(new User()) # list[User] | List of user object (optional)
@@ -85,8 +81,6 @@ try:
     api_instance.create_users_with_array_input(body=body);
 except ApiException as e:
     print "Exception when calling UserApi->create_users_with_array_input: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -124,7 +118,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 api_instance = swagger_client.UserApi
 body = array(new User()) # list[User] | List of user object (optional)
@@ -133,8 +126,6 @@ try:
     api_instance.create_users_with_list_input(body=body);
 except ApiException as e:
     print "Exception when calling UserApi->create_users_with_list_input: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -172,7 +163,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: test_http_basic
 swagger_client.configuration.username = 'YOUR_USERNAME'
@@ -185,8 +175,6 @@ try:
     api_instance.delete_user(username);
 except ApiException as e:
     print "Exception when calling UserApi->delete_user: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -224,7 +212,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 api_instance = swagger_client.UserApi
 username = username_example # str | The name that needs to be fetched. Use user1 for testing.
@@ -234,8 +221,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling UserApi->get_user_by_name: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -273,7 +258,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 api_instance = swagger_client.UserApi
 username = username_example # str | The user name for login (optional)
@@ -284,8 +268,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling UserApi->login_user: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -324,7 +306,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 api_instance = swagger_client.UserApi
 
@@ -332,8 +313,6 @@ try:
     api_instance.logout_user();
 except ApiException as e:
     print "Exception when calling UserApi->logout_user: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -368,7 +347,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 api_instance = swagger_client.UserApi
 username = username_example # str | name that need to be deleted
@@ -378,8 +356,6 @@ try:
     api_instance.update_user(username, body=body);
 except ApiException as e:
     print "Exception when calling UserApi->update_user: {e}\n";
-}
-?>
 ```
 
 ### Parameters

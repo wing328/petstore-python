@@ -31,7 +31,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
@@ -43,8 +42,6 @@ try:
     api_instance.add_pet(body=body);
 except ApiException as e:
     print "Exception when calling PetApi->add_pet: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -82,7 +79,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
@@ -94,8 +90,6 @@ try:
     api_instance.add_pet_using_byte_array(body=body);
 except ApiException as e:
     print "Exception when calling PetApi->add_pet_using_byte_array: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -133,7 +127,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
@@ -146,8 +139,6 @@ try:
     api_instance.delete_pet(pet_id, api_key=api_key);
 except ApiException as e:
     print "Exception when calling PetApi->delete_pet: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -186,7 +177,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
@@ -199,8 +189,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling PetApi->find_pets_by_status: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -238,7 +226,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
@@ -251,8 +238,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling PetApi->find_pets_by_tags: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -290,7 +275,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
@@ -307,8 +291,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling PetApi->get_pet_by_id: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -346,7 +328,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
@@ -363,8 +344,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling PetApi->get_pet_by_id_in_object: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -402,7 +381,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
 swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
@@ -419,8 +397,6 @@ try:
     pprint(api_response)
 except ApiException as e:
     print "Exception when calling PetApi->pet_pet_idtesting_byte_arraytrue_get: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -458,7 +434,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
@@ -470,8 +445,6 @@ try:
     api_instance.update_pet(body=body);
 except ApiException as e:
     print "Exception when calling PetApi->update_pet: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -509,7 +482,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
@@ -523,8 +495,6 @@ try:
     api_instance.update_pet_with_form(pet_id, name=name, status=status);
 except ApiException as e:
     print "Exception when calling PetApi->update_pet_with_form: {e}\n";
-}
-?>
 ```
 
 ### Parameters
@@ -564,7 +534,6 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 import time
 
-require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
@@ -578,8 +547,6 @@ try:
     api_instance.upload_file(pet_id, additional_metadata=additional_metadata, file=file);
 except ApiException as e:
     print "Exception when calling PetApi->upload_file: {e}\n";
-}
-?>
 ```
 
 ### Parameters
