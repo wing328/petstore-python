@@ -27,11 +27,11 @@ from pprint import pprint
 import time
 
 
-api_instance = swagger_client.StoreApi
+# create an instance of the API class
+api_instance = swagger_client.StoreApi()
 order_id = "order_id_example" # str | ID of the order that needs to be deleted
-
 try: 
-}    # Delete purchase order by ID
+    # Delete purchase order by ID
     api_instance.delete_order(order_id);
 except ApiException as e:
     print "Exception when calling StoreApi->delete_order: {e}\n";
@@ -82,11 +82,11 @@ swagger_client.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
 
-api_instance = swagger_client.StoreApi
+# create an instance of the API class
+api_instance = swagger_client.StoreApi()
 status = "placed" # str | Status value that needs to be considered for query (optional) (default to placed)
-
 try: 
-}    # Finds orders by status
+    # Finds orders by status
     api_response = api_instance.find_orders_by_status(status=status);
     pprint(api_response)
 except ApiException as e:
@@ -134,10 +134,10 @@ swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['api_key'] = 'BEARER'
 
-api_instance = swagger_client.StoreApi
-
+# create an instance of the API class
+api_instance = swagger_client.StoreApi()
 try: 
-}    # Returns pet inventories by status
+    # Returns pet inventories by status
     api_response = api_instance.get_inventory();
     pprint(api_response)
 except ApiException as e:
@@ -182,10 +182,10 @@ swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['api_key'] = 'BEARER'
 
-api_instance = swagger_client.StoreApi
-
+# create an instance of the API class
+api_instance = swagger_client.StoreApi()
 try: 
-}    # Fake endpoint to test arbitrary object return by 'Get inventory'
+    # Fake endpoint to test arbitrary object return by 'Get inventory'
     api_response = api_instance.get_inventory_in_object();
     pprint(api_response)
 except ApiException as e:
@@ -234,11 +234,11 @@ swagger_client.configuration.api_key['test_api_key_query'] = 'YOUR_API_KEY';
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['test_api_key_query'] = 'BEARER'
 
-api_instance = swagger_client.StoreApi
+# create an instance of the API class
+api_instance = swagger_client.StoreApi()
 order_id = "order_id_example" # str | ID of pet that needs to be fetched
-
 try: 
-}    # Find purchase order by ID
+    # Find purchase order by ID
     api_response = api_instance.get_order_by_id(order_id);
     pprint(api_response)
 except ApiException as e:
@@ -290,11 +290,11 @@ swagger_client.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
 # swagger_client.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
 
-api_instance = swagger_client.StoreApi
+# create an instance of the API class
+api_instance = swagger_client.StoreApi()
 body = swagger_client.Order() # Order | order placed for purchasing the pet (optional)
-
 try: 
-}    # Place an order for a pet
+    # Place an order for a pet
     api_response = api_instance.place_order(body=body);
     pprint(api_response)
 except ApiException as e:

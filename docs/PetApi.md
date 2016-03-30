@@ -35,11 +35,11 @@ import time
 # Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-api_instance = swagger_client.PetApi
+# create an instance of the API class
+api_instance = swagger_client.PetApi()
 body = swagger_client.Pet() # Pet | Pet object that needs to be added to the store (optional)
-
 try: 
-}    # Add a new pet to the store
+    # Add a new pet to the store
     api_instance.add_pet(body=body);
 except ApiException as e:
     print "Exception when calling PetApi->add_pet: {e}\n";
@@ -84,11 +84,11 @@ import time
 # Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-api_instance = swagger_client.PetApi
+# create an instance of the API class
+api_instance = swagger_client.PetApi()
 body = "B" # str | Pet object in the form of byte array (optional)
-
 try: 
-}    # Fake endpoint to test byte array in body parameter for adding a new pet to the store
+    # Fake endpoint to test byte array in body parameter for adding a new pet to the store
     api_instance.add_pet_using_byte_array(body=body);
 except ApiException as e:
     print "Exception when calling PetApi->add_pet_using_byte_array: {e}\n";
@@ -133,12 +133,12 @@ import time
 # Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-api_instance = swagger_client.PetApi
+# create an instance of the API class
+api_instance = swagger_client.PetApi()
 pet_id = 789 # int | Pet id to delete
 api_key = "api_key_example" # str |  (optional)
-
 try: 
-}    # Deletes a pet
+    # Deletes a pet
     api_instance.delete_pet(pet_id, api_key=api_key);
 except ApiException as e:
     print "Exception when calling PetApi->delete_pet: {e}\n";
@@ -184,11 +184,11 @@ import time
 # Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-api_instance = swagger_client.PetApi
+# create an instance of the API class
+api_instance = swagger_client.PetApi()
 status = ["available"] # list[str] | Status values that need to be considered for query (optional) (default to available)
-
 try: 
-}    # Finds Pets by status
+    # Finds Pets by status
     api_response = api_instance.find_pets_by_status(status=status);
     pprint(api_response)
 except ApiException as e:
@@ -234,11 +234,11 @@ import time
 # Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-api_instance = swagger_client.PetApi
+# create an instance of the API class
+api_instance = swagger_client.PetApi()
 tags = ["tags_example"] # list[str] | Tags to filter by (optional)
-
 try: 
-}    # Finds Pets by tags
+    # Finds Pets by tags
     api_response = api_instance.find_pets_by_tags(tags=tags);
     pprint(api_response)
 except ApiException as e:
@@ -288,11 +288,11 @@ swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
 # Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-api_instance = swagger_client.PetApi
+# create an instance of the API class
+api_instance = swagger_client.PetApi()
 pet_id = 789 # int | ID of pet that needs to be fetched
-
 try: 
-}    # Find pet by ID
+    # Find pet by ID
     api_response = api_instance.get_pet_by_id(pet_id);
     pprint(api_response)
 except ApiException as e:
@@ -342,11 +342,11 @@ swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
 # Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-api_instance = swagger_client.PetApi
+# create an instance of the API class
+api_instance = swagger_client.PetApi()
 pet_id = 789 # int | ID of pet that needs to be fetched
-
 try: 
-}    # Fake endpoint to test inline arbitrary object return by 'Find pet by ID'
+    # Fake endpoint to test inline arbitrary object return by 'Find pet by ID'
     api_response = api_instance.get_pet_by_id_in_object(pet_id);
     pprint(api_response)
 except ApiException as e:
@@ -396,11 +396,11 @@ swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY';
 # Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-api_instance = swagger_client.PetApi
+# create an instance of the API class
+api_instance = swagger_client.PetApi()
 pet_id = 789 # int | ID of pet that needs to be fetched
-
 try: 
-}    # Fake endpoint to test byte array return by 'Find pet by ID'
+    # Fake endpoint to test byte array return by 'Find pet by ID'
     api_response = api_instance.pet_pet_idtesting_byte_arraytrue_get(pet_id);
     pprint(api_response)
 except ApiException as e:
@@ -446,11 +446,11 @@ import time
 # Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-api_instance = swagger_client.PetApi
+# create an instance of the API class
+api_instance = swagger_client.PetApi()
 body = swagger_client.Pet() # Pet | Pet object that needs to be added to the store (optional)
-
 try: 
-}    # Update an existing pet
+    # Update an existing pet
     api_instance.update_pet(body=body);
 except ApiException as e:
     print "Exception when calling PetApi->update_pet: {e}\n";
@@ -495,13 +495,13 @@ import time
 # Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-api_instance = swagger_client.PetApi
+# create an instance of the API class
+api_instance = swagger_client.PetApi()
 pet_id = "pet_id_example" # str | ID of pet that needs to be updated
 name = "name_example" # str | Updated name of the pet (optional)
 status = "status_example" # str | Updated status of the pet (optional)
-
 try: 
-}    # Updates a pet in the store with form data
+    # Updates a pet in the store with form data
     api_instance.update_pet_with_form(pet_id, name=name, status=status);
 except ApiException as e:
     print "Exception when calling PetApi->update_pet_with_form: {e}\n";
@@ -548,13 +548,13 @@ import time
 # Configure OAuth2 access token for authorization: petstore_auth
 swagger_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-api_instance = swagger_client.PetApi
+# create an instance of the API class
+api_instance = swagger_client.PetApi()
 pet_id = 789 # int | ID of pet to update
 additional_metadata = "additional_metadata_example" # str | Additional data to pass to server (optional)
-file = swagger_client.file() # file | file to upload (optional)
-
+file = "/path/to/file.txt" # file | file to upload (optional)
 try: 
-}    # uploads an image
+    # uploads an image
     api_instance.upload_file(pet_id, additional_metadata=additional_metadata, file=file);
 except ApiException as e:
     print "Exception when calling PetApi->upload_file: {e}\n";

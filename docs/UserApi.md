@@ -29,11 +29,11 @@ from pprint import pprint
 import time
 
 
-api_instance = swagger_client.UserApi
+# create an instance of the API class
+api_instance = swagger_client.UserApi()
 body = swagger_client.User() # User | Created user object (optional)
-
 try: 
-}    # Create user
+    # Create user
     api_instance.create_user(body=body);
 except ApiException as e:
     print "Exception when calling UserApi->create_user: {e}\n";
@@ -75,11 +75,11 @@ from pprint import pprint
 import time
 
 
-api_instance = swagger_client.UserApi
+# create an instance of the API class
+api_instance = swagger_client.UserApi()
 body = [swagger_client.User()] # list[User] | List of user object (optional)
-
 try: 
-}    # Creates list of users with given input array
+    # Creates list of users with given input array
     api_instance.create_users_with_array_input(body=body);
 except ApiException as e:
     print "Exception when calling UserApi->create_users_with_array_input: {e}\n";
@@ -121,11 +121,11 @@ from pprint import pprint
 import time
 
 
-api_instance = swagger_client.UserApi
+# create an instance of the API class
+api_instance = swagger_client.UserApi()
 body = [swagger_client.User()] # list[User] | List of user object (optional)
-
 try: 
-}    # Creates list of users with given input array
+    # Creates list of users with given input array
     api_instance.create_users_with_list_input(body=body);
 except ApiException as e:
     print "Exception when calling UserApi->create_users_with_list_input: {e}\n";
@@ -171,11 +171,11 @@ import time
 swagger_client.configuration.username = 'YOUR_USERNAME'
 swagger_client.configuration.password = 'YOUR_PASSWORD'
 
-api_instance = swagger_client.UserApi
+# create an instance of the API class
+api_instance = swagger_client.UserApi()
 username = "username_example" # str | The name that needs to be deleted
-
 try: 
-}    # Delete user
+    # Delete user
     api_instance.delete_user(username);
 except ApiException as e:
     print "Exception when calling UserApi->delete_user: {e}\n";
@@ -217,11 +217,11 @@ from pprint import pprint
 import time
 
 
-api_instance = swagger_client.UserApi
+# create an instance of the API class
+api_instance = swagger_client.UserApi()
 username = "username_example" # str | The name that needs to be fetched. Use user1 for testing.
-
 try: 
-}    # Get user by user name
+    # Get user by user name
     api_response = api_instance.get_user_by_name(username);
     pprint(api_response)
 except ApiException as e:
@@ -264,12 +264,12 @@ from pprint import pprint
 import time
 
 
-api_instance = swagger_client.UserApi
+# create an instance of the API class
+api_instance = swagger_client.UserApi()
 username = "username_example" # str | The user name for login (optional)
 password = "password_example" # str | The password for login in clear text (optional)
-
 try: 
-}    # Logs user into the system
+    # Logs user into the system
     api_response = api_instance.login_user(username=username, password=password);
     pprint(api_response)
 except ApiException as e:
@@ -313,10 +313,10 @@ from pprint import pprint
 import time
 
 
-api_instance = swagger_client.UserApi
-
+# create an instance of the API class
+api_instance = swagger_client.UserApi()
 try: 
-}    # Logs out current logged in user session
+    # Logs out current logged in user session
     api_instance.logout_user();
 except ApiException as e:
     print "Exception when calling UserApi->logout_user: {e}\n";
@@ -355,12 +355,12 @@ from pprint import pprint
 import time
 
 
-api_instance = swagger_client.UserApi
+# create an instance of the API class
+api_instance = swagger_client.UserApi()
 username = "username_example" # str | name that need to be deleted
 body = swagger_client.User() # User | Updated user object (optional)
-
 try: 
-}    # Updated user
+    # Updated user
     api_instance.update_user(username, body=body);
 except ApiException as e:
     print "Exception when calling UserApi->update_user: {e}\n";
