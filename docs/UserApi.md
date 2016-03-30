@@ -23,11 +23,10 @@ This can only be done by the logged in user.
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # create an instance of the API class
 api_instance = swagger_client.UserApi()
@@ -70,11 +69,10 @@ Creates list of users with given input array
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # create an instance of the API class
 api_instance = swagger_client.UserApi()
@@ -117,11 +115,10 @@ Creates list of users with given input array
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # create an instance of the API class
 api_instance = swagger_client.UserApi()
@@ -164,11 +161,10 @@ This can only be done by the logged in user.
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # Configure HTTP basic authorization: test_http_basic
 swagger_client.configuration.username = 'YOUR_USERNAME'
@@ -215,11 +211,10 @@ Get user by user name
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # create an instance of the API class
 api_instance = swagger_client.UserApi()
@@ -263,11 +258,10 @@ Logs user into the system
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # create an instance of the API class
 api_instance = swagger_client.UserApi()
@@ -313,11 +307,10 @@ Logs out current logged in user session
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # create an instance of the API class
 api_instance = swagger_client.UserApi()
@@ -356,11 +349,10 @@ This can only be done by the logged in user.
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # create an instance of the API class
 api_instance = swagger_client.UserApi()

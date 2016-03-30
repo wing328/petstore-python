@@ -21,11 +21,10 @@ For valid response try integer IDs with value < 1000. Anything above 1000 or non
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # create an instance of the API class
 api_instance = swagger_client.StoreApi()
@@ -68,11 +67,10 @@ A single status value can be provided as a string
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # Configure API key authorization: test_api_client_id
 swagger_client.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY'
@@ -125,11 +123,10 @@ Returns a map of status codes to quantities
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # Configure API key authorization: api_key
 swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY'
@@ -174,11 +171,10 @@ Returns an arbitrary object which is actually a map of status codes to quantitie
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # Configure API key authorization: api_key
 swagger_client.configuration.api_key['api_key'] = 'YOUR_API_KEY'
@@ -223,11 +219,10 @@ For valid response try integer IDs with value <= 5 or > 10. Other values will ge
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # Configure API key authorization: test_api_key_header
 swagger_client.configuration.api_key['test_api_key_header'] = 'YOUR_API_KEY'
@@ -280,11 +275,10 @@ Place an order for a pet
 
 ### Example 
 ```python
+import time
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time
-
 
 # Configure API key authorization: test_api_client_id
 swagger_client.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY'
