@@ -1,4 +1,4 @@
-# Petstore\UserApi
+# pet_store.UserApi
 
 All URIs are relative to *http://petstore.swagger.io/v2*
 
@@ -24,13 +24,13 @@ This can only be done by the logged in user.
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = Petstore.UserApi()
-body = Petstore.User() # User | Created user object (optional)
+api_instance = pet_store.UserApi()
+body = pet_store.User() # User | Created user object (optional)
 
 try: 
     # Create user
@@ -70,13 +70,13 @@ Creates list of users with given input array
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = Petstore.UserApi()
-body = [Petstore.User()] # list[User] | List of user object (optional)
+api_instance = pet_store.UserApi()
+body = [pet_store.User()] # list[User] | List of user object (optional)
 
 try: 
     # Creates list of users with given input array
@@ -116,13 +116,13 @@ Creates list of users with given input array
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = Petstore.UserApi()
-body = [Petstore.User()] # list[User] | List of user object (optional)
+api_instance = pet_store.UserApi()
+body = [pet_store.User()] # list[User] | List of user object (optional)
 
 try: 
     # Creates list of users with given input array
@@ -162,16 +162,16 @@ This can only be done by the logged in user.
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # Configure HTTP basic authorization: test_http_basic
-Petstore.configuration.username = 'YOUR_USERNAME'
-Petstore.configuration.password = 'YOUR_PASSWORD'
+pet_store.configuration.username = 'YOUR_USERNAME'
+pet_store.configuration.password = 'YOUR_PASSWORD'
 
 # create an instance of the API class
-api_instance = Petstore.UserApi()
+api_instance = pet_store.UserApi()
 username = 'username_example' # str | The name that needs to be deleted
 
 try: 
@@ -212,12 +212,12 @@ Get user by user name
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = Petstore.UserApi()
+api_instance = pet_store.UserApi()
 username = 'username_example' # str | The name that needs to be fetched. Use user1 for testing.
 
 try: 
@@ -259,12 +259,12 @@ Logs user into the system
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = Petstore.UserApi()
+api_instance = pet_store.UserApi()
 username = 'username_example' # str | The user name for login (optional)
 password = 'password_example' # str | The password for login in clear text (optional)
 
@@ -308,12 +308,12 @@ Logs out current logged in user session
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = Petstore.UserApi()
+api_instance = pet_store.UserApi()
 
 try: 
     # Logs out current logged in user session
@@ -350,14 +350,14 @@ This can only be done by the logged in user.
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = Petstore.UserApi()
+api_instance = pet_store.UserApi()
 username = 'username_example' # str | name that need to be deleted
-body = Petstore.User() # User | Updated user object (optional)
+body = pet_store.User() # User | Updated user object (optional)
 
 try: 
     # Updated user

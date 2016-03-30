@@ -1,4 +1,4 @@
-# Petstore\StoreApi
+# pet_store.StoreApi
 
 All URIs are relative to *http://petstore.swagger.io/v2*
 
@@ -22,12 +22,12 @@ For valid response try integer IDs with value < 1000. Anything above 1000 or non
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = Petstore.StoreApi()
+api_instance = pet_store.StoreApi()
 order_id = 'order_id_example' # str | ID of the order that needs to be deleted
 
 try: 
@@ -68,21 +68,21 @@ A single status value can be provided as a string
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: test_api_client_id
-Petstore.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY'
+pet_store.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-# Petstore.configuration.api_key_prefix['x-test_api_client_id'] = 'BEARER'
+# pet_store.configuration.api_key_prefix['x-test_api_client_id'] = 'BEARER'
 # Configure API key authorization: test_api_client_secret
-Petstore.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY'
+pet_store.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-# Petstore.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
+# pet_store.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
 
 # create an instance of the API class
-api_instance = Petstore.StoreApi()
+api_instance = pet_store.StoreApi()
 status = 'placed' # str | Status value that needs to be considered for query (optional) (default to placed)
 
 try: 
@@ -124,17 +124,17 @@ Returns a map of status codes to quantities
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: api_key
-Petstore.configuration.api_key['api_key'] = 'YOUR_API_KEY'
+pet_store.configuration.api_key['api_key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-# Petstore.configuration.api_key_prefix['api_key'] = 'BEARER'
+# pet_store.configuration.api_key_prefix['api_key'] = 'BEARER'
 
 # create an instance of the API class
-api_instance = Petstore.StoreApi()
+api_instance = pet_store.StoreApi()
 
 try: 
     # Returns pet inventories by status
@@ -172,17 +172,17 @@ Returns an arbitrary object which is actually a map of status codes to quantitie
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: api_key
-Petstore.configuration.api_key['api_key'] = 'YOUR_API_KEY'
+pet_store.configuration.api_key['api_key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-# Petstore.configuration.api_key_prefix['api_key'] = 'BEARER'
+# pet_store.configuration.api_key_prefix['api_key'] = 'BEARER'
 
 # create an instance of the API class
-api_instance = Petstore.StoreApi()
+api_instance = pet_store.StoreApi()
 
 try: 
     # Fake endpoint to test arbitrary object return by 'Get inventory'
@@ -220,21 +220,21 @@ For valid response try integer IDs with value <= 5 or > 10. Other values will ge
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: test_api_key_header
-Petstore.configuration.api_key['test_api_key_header'] = 'YOUR_API_KEY'
+pet_store.configuration.api_key['test_api_key_header'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-# Petstore.configuration.api_key_prefix['test_api_key_header'] = 'BEARER'
+# pet_store.configuration.api_key_prefix['test_api_key_header'] = 'BEARER'
 # Configure API key authorization: test_api_key_query
-Petstore.configuration.api_key['test_api_key_query'] = 'YOUR_API_KEY'
+pet_store.configuration.api_key['test_api_key_query'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-# Petstore.configuration.api_key_prefix['test_api_key_query'] = 'BEARER'
+# pet_store.configuration.api_key_prefix['test_api_key_query'] = 'BEARER'
 
 # create an instance of the API class
-api_instance = Petstore.StoreApi()
+api_instance = pet_store.StoreApi()
 order_id = 'order_id_example' # str | ID of pet that needs to be fetched
 
 try: 
@@ -276,22 +276,22 @@ Place an order for a pet
 ### Example 
 ```python
 import time
-import Petstore
-from Petstore.rest import ApiException
+import pet_store
+from pet_store.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: test_api_client_id
-Petstore.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY'
+pet_store.configuration.api_key['x-test_api_client_id'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-# Petstore.configuration.api_key_prefix['x-test_api_client_id'] = 'BEARER'
+# pet_store.configuration.api_key_prefix['x-test_api_client_id'] = 'BEARER'
 # Configure API key authorization: test_api_client_secret
-Petstore.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY'
+pet_store.configuration.api_key['x-test_api_client_secret'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. BEARER) for API key, if needed
-# Petstore.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
+# pet_store.configuration.api_key_prefix['x-test_api_client_secret'] = 'BEARER'
 
 # create an instance of the API class
-api_instance = Petstore.StoreApi()
-body = Petstore.Order() # Order | order placed for purchasing the pet (optional)
+api_instance = pet_store.StoreApi()
+body = pet_store.Order() # Order | order placed for purchasing the pet (optional)
 
 try: 
     # Place an order for a pet

@@ -3,7 +3,7 @@
 import sys
 from setuptools import setup, find_packages
 
-NAME = "Petstore"
+NAME = "pet_store"
 VERSION = "1.2.3"
 
 
