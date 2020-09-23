@@ -27,3 +27,5 @@ from openapi_client.exceptions import ApiTypeError
 from openapi_client.exceptions import ApiValueError
 from openapi_client.exceptions import ApiKeyError
 from openapi_client.exceptions import ApiException
+
+__import__('sys').setrecursionlimit(3000)

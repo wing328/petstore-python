@@ -30,7 +30,9 @@ class TestOrder(unittest.TestCase):
         """Test Order"""
         # FIXME: construct object with mandatory attributes with example values
         # model = Order()  # noqa: E501
-        pass
+        print("Current value of the recursion limit:")
+        print(sys.getrecursionlimit())
+        #pass
 
 
 if __name__ == '__main__':
